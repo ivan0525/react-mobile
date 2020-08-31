@@ -8,7 +8,7 @@ const config: IConfig = {
     type: 'none',
   },
   theme: {
-    'primary-color': 'red',
+    'primary-color': 'cyan',
   },
   routes: [
     { path: '/login', component: '@/pages/Login/index' },
@@ -21,6 +21,13 @@ const config: IConfig = {
       ],
     },
   ],
+  proxy: {
+    '/api/': {
+      changeOrigin: true,
+      secure: false,
+      pathRewrite: { '/api': '/' },
+    },
+  },
 };
 
 export default defineConfig(config);

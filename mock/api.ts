@@ -1,6 +1,7 @@
 import Mock, { Random } from 'mockjs';
 
 export default {
+  // 支持自定义函数，API 参考 express@4
   '/api/users': (req: any, res: any) => {
     const json = Mock.mock({
       retCode: 0,
@@ -8,8 +9,8 @@ export default {
       data: {
         'userList|1-20': [
           {
-            id: Random.id(),
-            name: Random.name(),
+            id: '@guid()',
+            name: '@cname()',
           },
         ],
       },
