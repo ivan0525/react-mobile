@@ -27,12 +27,15 @@
     "axios": "^0.20.0",
     "lint-staged": "^10.0.7",
     "prettier": "^1.19.1",
+    "qs": "^6.9.4",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "umi": "^3.2.19",
     "yorkie": "^2.0.0"
   },
   "devDependencies": {
+    "@testing-library/react": "^11.0.2",
+    "@types/jest": "^26.0.13",
     "@types/mockjs": "^1.0.3",
     "mockjs": "^1.1.0"
   }
